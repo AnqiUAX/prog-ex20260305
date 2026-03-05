@@ -8,12 +8,12 @@ public class CentroFP {
         alumnos = new Alumno[MAX_ALUMNOS];
     }
 
-    public Alumno findAlumno(int idAlumno) {
+    public Alumno buscarAlumno(int id) {
         boolean seguirBuscar = true;
         Alumno alumnoEncontrado = null;
 
         for(int i = 0; i < MAX_ALUMNOS && seguirBuscar; i++){
-            if(alumnos[i] != null && alumnos[i].getId() == idAlumno){
+            if(alumnos[i] != null && alumnos[i].getId() == id){
                 alumnoEncontrado = alumnos[i];
                 seguirBuscar = false;
                 alumnoEncontrado = alumnos[i];
@@ -40,7 +40,7 @@ public class CentroFP {
         boolean alumnoAnadido = false;
         int posicion;
 
-        if (findAlumno(alumno.getId()) == null ) {
+        if (buscarAlumno(alumno.getId()) == null ) {
             posicion = buscarPrimerHuecoLibre();
             if(posicion >= 0){
                 alumnos[posicion] = alumno;
