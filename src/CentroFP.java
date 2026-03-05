@@ -51,5 +51,20 @@ public class CentroFP {
         return alumnoAnadido;
     }
 
+    public Alumno deleteAlumno(int id){
+        Alumno alumnoEncontrado = null;
+        boolean seguirBuscar = true;
+
+        for(int i = 0; i < MAX_ALUMNOS && seguirBuscar; i++){
+            if(alumnos[i] != null && alumnos[i].getId() == id){
+                alumnoEncontrado = alumnos[i];
+                alumnos[i] = null;
+                seguirBuscar = false;
+            }
+        }
+
+        return alumnoEncontrado;
+    }
+
 
 }
