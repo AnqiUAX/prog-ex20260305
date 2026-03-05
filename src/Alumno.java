@@ -33,9 +33,9 @@ public class Alumno {
         StringBuilder sb = new StringBuilder("Alumno{");
 
         sb.append(String.format("\n id: %d", id));
-        sb.append(String.format("\n nombre: %s", nombre));
-        sb.append(String.format("\n tituloFP: %s", tituloFP));
-        sb.append(String.format("\n edad: %d", edad));
+        sb.append(String.format(" nombre: %s", nombre));
+        sb.append(String.format(" tituloFP: %s", tituloFP));
+        sb.append(String.format(" edad: %d", edad));
         sb.append("}");
 
         return sb.toString();
