@@ -7,10 +7,13 @@ public class Main {
 
         Alumno alumno2 = new Alumno(2,"Alex","DAM",19);
 
+        Alumno alumno3 = new Alumno(3,"Ana","DAM",20);
+
         System.out.println(centroFP.buscarAlumno(1));
 
         System.out.println(centroFP.registrarAlumno(alumno1));
         System.out.println(centroFP.registrarAlumno(alumno2));
+        System.out.println(centroFP.registrarAlumno(alumno3));
 
         System.out.println(centroFP.mostrarAlumnos());
         System.out.println(centroFP.contarAlumnos());

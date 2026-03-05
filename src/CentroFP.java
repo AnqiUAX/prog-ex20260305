@@ -27,7 +27,7 @@ public class CentroFP {
         boolean seguirBuscar = true;
 
         for(int i = 0; i < MAX_ALUMNOS && seguirBuscar; i++){
-            if(alumnos[i] != null){
+            if(alumnos[i] == null){
                 posicionAlumno = i;
                 seguirBuscar = false;
             }
