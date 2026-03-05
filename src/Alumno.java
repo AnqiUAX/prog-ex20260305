@@ -28,5 +28,31 @@ public class Alumno {
         return edad;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("Alumno{");
+
+        sb.append(String.format("\n id: %d", id));
+        sb.append(String.format("\n nombre: %s", nombre));
+        sb.append(String.format("\n tituloFP: %s", tituloFP));
+        sb.append(String.format("\n edad: %d", edad));
+        sb.append("}");
+
+        return sb.toString();
+
+    }
+
+    public boolean updateEdad(int edad) {
+        boolean resultado;
+
+        if (edad <= 0 ){
+            resultado = false;
+        }
+        else{
+            this.edad = edad;
+            resultado = true;
+        }
+        return resultado;
+    }
 
 }
