@@ -32,10 +32,24 @@ public class CentroFP {
                 seguirBuscar = false;
             }
         }
+
         return posicionAlumno;
     }
 
-    public
+    public boolean addAlumno(Alumno alumno){
+        boolean alumnoAnadido = false;
+        int posicion;
+
+        if (findAlumno(alumno.getId()) == null ) {
+            posicion = buscarPrimerHuecoLibre();
+            if(posicion >= 0){
+                alumnos[posicion] = alumno;
+                alumnoAnadido = true;
+            }
+        }
+
+        return alumnoAnadido;
+    }
 
 
 }
