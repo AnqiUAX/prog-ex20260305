@@ -9,7 +9,7 @@ public class Main {
 
         Alumno alumno3 = new Alumno(3,"Ana","DAM",20);
 
-        System.out.println(centroFP.buscarAlumno(1));
+        System.out.println(centroFP.buscarAlumno(4));
 
         System.out.println(centroFP.registrarAlumno(alumno1));
         System.out.println(centroFP.registrarAlumno(alumno2));
